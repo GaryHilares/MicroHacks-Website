@@ -1,0 +1,155 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: Poppins, sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+nav{
+    width: 100%;
+    z-index: 2;
+    position: fixed;
+    background-color: white;
+    border-bottom: 1px solid rgba(0,0,0,0);
+}
+
+.bottom-placed{
+    margin-top: 10%;
+    transform: translateY(-50%);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    float: right;
+}
+
+div{
+    background-color: transparent;
+}
+
+li{
+    display: inline-block;
+    margin-right: 50px;
+}
+
+section{
+    clear: both;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.content-box{
+    justify-content: center;
+    width: 50%;
+    height: 100vh;
+}
+
+.flex-centering{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+#home h2{font-weight: normal;}
+
+h1{
+    margin: 0;
+    font-size: 6em;
+}
+
+h2{
+    margin: 0;
+    font-size: 2em;
+}
+
+h3{
+    margin: 0;
+    font-size: 1.5em;
+}
+
+button{
+    outline: none;
+    border: 1px solid black;
+    padding: 1em;
+    background-color: transparent;
+    border-radius: 22px / 22px;
+    transition: color 250ms ease-in 0s, background-color 0.5s ease-in 0s;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+    transition: color 250ms ease-in 0s, background-color 0.5s ease-in 0s;
+}
+
+.animated-link::after{
+    content: "";
+    display: block;
+    border-bottom: 3px solid #4965FA;
+    transform: scaleX(0);
+    transition: transform 0.25s;
+}
+
+.animated-link:focus::after{
+    transform: scaleX(1);
+}
+
+.animated-link:hover::after{
+    transform: scaleX(1);
+}
+
+.content-justifying{
+    text-align: justify;
+}
+
+section{
+    overflow: hidden;
+    scroll-margin-top: 50px;
+}
+
+section#about{
+    background-color: #6F8184;
+}
+
+section#sponsors{
+    background-color: #1CB76D;
+}
+
+section#contact{
+    background-color: #24CDE4;
+}
+
+.size-limited{
+    transform: translateX(600%);
+    max-width: 60%;
+}
+
+nav > a > img{
+    padding: 10px 0 0 20px;
+}
+
+@media(max-width: 800px){
+    html{
+        font-size: 10px;
+    }
+}
+
+.white-text{
+    color: white;
+}
