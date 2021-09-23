@@ -84,6 +84,7 @@ h3{
 }
 
 button{
+    cursor: pointer;
     outline: none;
     border: 1px solid black;
     padding: 1em;
