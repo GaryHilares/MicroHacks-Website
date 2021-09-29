@@ -174,16 +174,20 @@ and (orientation: portrait){
 
 @media(max-width: 800px){
     html{
-        font-size: 30px;
+        font-size: 12px;
+    }
+    #img-logo{
+        width: 250px;
+        height: 250px;
     }
 }
 
-/*button{
-    cursor: pointer;
-    outline: none;
-    border: 1px solid black;
-    padding: 1em;
-    background-color: transparent;
-    border-radius: 22px / 22px;
-    transition: color 250ms ease-in 0s, background-color 0.5s ease-in 0s;
-}*/
+td{
+    width: 200px;
+}
+
+td img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
