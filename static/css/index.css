@@ -191,3 +191,8 @@ td img{
     margin-left: auto;
     margin-right: auto;
 }
+
+.invisible-table td{
+    border: 0;
+    padding: 20px;
+}
