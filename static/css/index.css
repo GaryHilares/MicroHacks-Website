@@ -197,3 +197,24 @@ td img{
     border: 0;
     padding: 20px;
 }
+
+details summary {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+details summary::marker {
+    content: "";
+}
+
+details summary::after {
+    content: "▼";
+    float: right;
+    padding-left: 20px;
+}
+
+details[open] summary::after {
+    content: "▲";
+    float: right;
+    padding-left: 20px;
+}
