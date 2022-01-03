@@ -18,4 +18,4 @@
 - [Discord Server](https://discord.gg/GaPHHqANYq)
 
 ## What is µHacks Website?
-µHacks Website is the website for µHacks (a. k. a. MicroHacks) hackathon, which will be held between October 29 and October 31.
+µHacks Website is the website for µHacks (a. k. a. MicroHacks) hackathon, which will be held between January 21 and January 23.
