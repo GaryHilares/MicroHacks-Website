@@ -86,8 +86,9 @@ h3{
 button{
     cursor: pointer;
     outline: none;
-    border: 1px solid black;
-    padding: 1em;
+    border: 2px solid black;
+    padding: 0.70em 1em;
+    font-size: 1.25em;
     background-color: transparent;
     border-radius: 22px / 22px;
     transition: color 250ms ease-in 0s, background-color 0.5s ease-in 0s;
