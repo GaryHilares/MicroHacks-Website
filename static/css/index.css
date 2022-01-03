@@ -121,7 +121,7 @@ button:hover{
 }
 
 section{
-    overflow: hidden;
+    overflow: auto;
     scroll-margin-top: 50px;
 }
 
