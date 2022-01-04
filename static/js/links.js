@@ -7,4 +7,4 @@ function linkButton(id,link){
 }
 
 linkButton('sponsors-button', 'https://drive.google.com/file/d/1dZLfdYeRiNUdpIZu6abrHnSioDC2V1ol/view?usp=sharing');
-linkButton('register-button','https://forms.gle/8jhHwi4quQv7yu1m7');
+linkButton('register-button', 'https://microhacks.devpost.com/');
