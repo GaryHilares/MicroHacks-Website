@@ -1,0 +1,52 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    width: 75%;
+}
+
+.image-wrapper {
+    text-align: center;
+}
+
+i {
+    display: block;
+    margin-bottom: 20px;
+}
+
+html {
+    font-family: Poppins, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #24CDE4;
+}
+
+#content {
+    background-color: white;
+    width: 50%;
+    padding: 30px;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%);
+}
