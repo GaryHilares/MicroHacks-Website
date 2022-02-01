@@ -1,89 +1,92 @@
-html, body{
+html,
+body {
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
 }
 
-html{
+html {
     font-family: Poppins, sans-serif;
     scroll-behavior: smooth;
 }
 
 
-nav{
+nav {
     width: 100%;
     z-index: 2;
     position: fixed;
     background-color: white;
-    border-bottom: 1px solid rgba(0,0,0,0);
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
 }
 
-.bottom-placed{
+.bottom-placed {
     margin-top: 10%;
     transform: translateY(-50%);
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
 
-ul{
+ul {
     float: right;
 }
 
-div{
+div {
     background-color: transparent;
 }
 
-li{
+li {
     display: inline-block;
     margin-right: 50px;
 }
 
-section{
+section {
     clear: both;
 }
 
-.left{
+.left {
     float: left;
 }
 
-.right{
+.right {
     float: right;
 }
 
-.content-box{
+.content-box {
     justify-content: center;
     width: 50%;
     height: 100vh;
 }
 
-.flex-centering{
+.flex-centering {
     display: flex;
     text-align: center;
     align-items: center;
 }
 
-#home h2{font-weight: normal;}
+#home h2 {
+    font-weight: normal;
+}
 
-h1{
+h1 {
     margin: 0;
     font-size: 6em;
 }
 
-h2{
+h2 {
     margin: 0;
     font-size: 2em;
 }
 
-h3{
+h3 {
     margin: 0;
     font-size: 1.5em;
 }
 
-button{
+button {
     cursor: pointer;
     outline: none;
     border: 2px solid black;
@@ -94,13 +97,13 @@ button{
     transition: color 250ms ease-in 0s, background-color 0.5s ease-in 0s;
 }
 
-button:hover{
+button:hover {
     background-color: black;
     color: white;
     transition: color 250ms ease-in 0s, background-color 0.5s ease-in 0s;
 }
 
-.animated-link::after{
+.animated-link::after {
     content: "";
     display: block;
     border-bottom: 3px solid #4965FA;
@@ -108,92 +111,110 @@ button:hover{
     transition: transform 0.25s;
 }
 
-.animated-link:focus::after{
+.animated-link:focus::after {
     transform: scaleX(1);
 }
 
-.animated-link:hover::after{
+.animated-link:hover::after {
     transform: scaleX(1);
 }
 
-.content-justifying{
+.content-justifying {
     text-align: justify;
 }
 
-section{
+section {
     overflow: auto;
     scroll-margin-top: 50px;
 }
 
-section#about{background-color: #6F8184;}
-section#sponsors{background-color: #1CB76D;}
-section#contact{background-color: #24CDE4;}
+section#about {
+    background-color: #6F8184;
+}
 
-.size-limited{
+section#sponsors {
+    background-color: #1CB76D;
+}
+
+section#contact {
+    background-color: #24CDE4;
+}
+
+.size-limited {
     transform: translateX(600%);
     max-width: 70%;
     margin-left: 75px;
 }
 
-nav > a > img{
+nav>a>img {
     padding: 10px 0 0 20px;
 }
 
-.white-text{
+.white-text {
     color: white;
 }
 
-@media only screen 
-and (min-device-width: 320px) 
-and (max-device-width: 480px)
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: portrait){
-    html{
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    html {
         font-size: 30px;
     }
-    .content-box{
+
+    .content-box {
         width: 100%;
         height: auto;
         margin: 100px 0 100px 0;
     }
-    .right{float:none;}
-    .left{float:none;}
-    section#home{padding-top: 200px;}
-    button{
+
+    .right {
+        float: none;
+    }
+
+    .left {
+        float: none;
+    }
+
+    section#home {
+        padding-top: 200px;
+    }
+
+    button {
         border-radius: 44px / 44px;
         border: 2px solid black;
         font-size: 1em;
     }
-    #little-logo{
+
+    #little-logo {
         margin: 30px 0 0 30px;
     }
-    #img-logo{
+
+    #img-logo {
         width: 75%;
         height: 75%;
     }
 }
 
-@media(max-width: 800px){
-    html{
+@media(max-width: 800px) {
+    html {
         font-size: 12px;
     }
-    #img-logo{
+
+    #img-logo {
         width: 250px;
         height: 250px;
     }
 }
 
-td{
+td {
     width: 200px;
 }
 
-td img{
+td img {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-.invisible-table td{
+.invisible-table td {
     border: 0;
     padding: 20px;
 }
