@@ -1,5 +1,5 @@
 <h1 align="center">
-  µHacks-Website
+  µHacks Website
 </h1>
 
 <p align="center">
