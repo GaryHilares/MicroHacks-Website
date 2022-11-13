@@ -8,7 +8,7 @@ function Social() {
     );
 }
 
-function Socials() {
+function Socials(props) {
     return (
         <div className={styles.social_box}>
             <Social />

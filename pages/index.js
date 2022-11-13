@@ -4,7 +4,7 @@ import { NavBar } from '../components/NavBar.js';
 import { Presentation } from '../components/Presentation.js';
 import { InfoContainer } from '../components/InfoContainer.js';
 import { Socials } from '../components/Socials.js';
-
+import { SponsorBox } from '../components/Sponsors.js';
 
 export default function Home() {
   return (
@@ -40,10 +40,24 @@ export default function Home() {
           </InfoContainer>
           <div id="#facts" style={{ clear: "both" }}></div>
           <InfoContainer title={"Some facts about µHacks"} right={false}>
-
+          </InfoContainer>
+          <InfoContainer title={"Sponsors"}>
+            <SponsorBox /* Diamond */
+              level={300}
+              sponsors={[
+                { imgSrc: "./µHacks new logo.png" },
+                { imgSrc: "./µHacks new logo.png" }
+              ]}
+            />
+            <SponsorBox /* Gold */
+              level={100}
+              sponsors={[
+                { imgSrc: "./µHacks new logo.png" },
+                { imgSrc: "./µHacks new logo.png" }
+              ]}
+            />
           </InfoContainer>
           <InfoContainer title={"Seasons collection"} right={false}>
-
           </InfoContainer>
           <Socials />
         </div>
