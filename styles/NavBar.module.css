@@ -1,0 +1,15 @@
+.navigation_bar {
+    margin: 8px 3%;
+    overflow: auto;
+}
+
+.navigation_bar__button_box {
+    margin: 16px 5%;
+    float: right;
+    display: block;
+}
+
+.navigation_bar__button_box__button {
+    margin-right: 20px;
+    font-size: 1.25em;
+}

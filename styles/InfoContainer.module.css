@@ -1,0 +1,12 @@
+.info_container {
+    padding: 30px 5%;
+    border: 1px solid #eb5e9c;
+    background-color: #5eebad;
+    overflow: auto;
+}
+
+.info_container__title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
