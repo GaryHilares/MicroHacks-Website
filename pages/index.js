@@ -1,35 +1,10 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import { NavBar } from '../components/NavBar.js'
+import { Presentation } from '../components/Presentation.js'
+import { InfoContainer } from '../components/InfoContainer.js'
+import { Socials } from '../components/Socials.js'
 
-function NavBar(props) {
-  return (
-    <nav className={styles.navigation_bar}>
-      <div className={styles.navigation_bar__button_box}>
-        {props.buttons.map((button) => <a className={styles.navigation_bar__button_box__button} href={button.link}>{button.text}</a>)}
-      </div>
-    </nav>
-  );
-}
-
-function Presentation() {
-  return (
-    <div style={{ padding: "15% 5%", border: "3px solid black", width: "94%", margin: "1% 3%", overflow: "hidden", background: "white" }}>
-      <div style={{ width: "50%", float: "left" }}>
-        <h1 style={{ textAlign: "center", fontSize: "7rem", fontWeight: "bold" }}>µHacks</h1>
-        <h2 style={{ textAlign: "center", fontSize: "2rem" }}>µprojects with BIG IMPACT</h2>
-        <br /><br /><br /><br /><br /><br />
-        <h3 style={{ textAlign: "center", fontSize: "1.5rem" }}>Virtual Hackathon</h3>
-        <div style={{ textAlign: "center", margin: "10px" }}>
-          <button style={{ color: 'green', border: "1px solid green", borderRadius: "3px", padding: "10px 30px", fontSize: "1.5rem" }}>Coming soon!</button>
-        </div>
-      </div>
-      <div style={{ width: "50%", float: "right", textAlign: "center" }}>
-        <Image src={'/logo.png'} width={500} height={500} />
-      </div>
-    </div >
-  );
-}
 
 export default function Home() {
   return (
@@ -42,15 +17,36 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
         {/* /Font links */}
       </Head>
-      <main style={{ backgroundImage: 'url(/background-test.png)', backgroundRepeat: "repeat-y", backgroundSize: "100% auto", minHeight: "100vh", padding: "1% 0" }}>
-        <NavBar buttons={[
-          { text: 'Link 1', link: '/somelink1' },
-          { text: 'Link 2', link: '/somelink2' },
-          { text: 'Link 3', link: '/somelink3' },
-          { text: 'Link 4', link: '/somelink4' },
-          { text: 'Link 5', link: '/somelink5' },
-        ]} />
-        <Presentation />
+      <main>
+        <div className={styles.main}>
+          <NavBar buttons={[
+            { text: 'About Us', link: '/#about-us' },
+            { text: 'Facts', link: '/#facts' },
+            { text: 'Sponsors', link: '/somelink3' },
+            { text: 'Seasons', link: '/somelink4' },
+            { text: 'Socials', link: '/somelink5' },
+          ]} />
+          <Presentation
+            title={"µHacks"}
+            subtitle={"µProjects with BIG IMPACT"}
+            details={"Virtual Hackathon"}
+            buttonText={"2nd Season coming soon!"}
+            imgSrc={"µHacks new logo.png"} />
+          <div id="#about-us" style={{ clear: "both" }}></div>
+          <InfoContainer title={"Welcome to µHacks!"} right={true}>
+            <p style={{ lineHeight: "1.25rem", margin: "10px 5%" }}>Students of all the world and all education levels are welcome to participate in this virtual hackathon.</p>
+            <p style={{ lineHeight: "1.25rem", margin: "10px 5%" }}>With a team of up to 3 other friends, you will have 36 hours to create a project which helps people managing small enterprises, startups and entrepeneurs improve. Additionally, you will be able to participate in many wokshops and activities to rest while developing your world-changing idea!</p>
+            <p style={{ lineHeight: "1.25rem", margin: "10px 5%" }}>We can’t wait to see your mind-blowing ideas rise! See you at µHacks!</p>
+          </InfoContainer>
+          <div id="#facts" style={{ clear: "both" }}></div>
+          <InfoContainer title={"Some facts about µHacks"} right={false}>
+
+          </InfoContainer>
+          <InfoContainer title={"Seasons collection"} right={false}>
+
+          </InfoContainer>
+          <Socials />
+        </div>
       </main>
     </div>
   );
