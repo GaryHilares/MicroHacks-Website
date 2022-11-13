@@ -1,9 +1,9 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-import { NavBar } from '../components/NavBar.js'
-import { Presentation } from '../components/Presentation.js'
-import { InfoContainer } from '../components/InfoContainer.js'
-import { Socials } from '../components/Socials.js'
+import Head from 'next/head';
+import styles from '../styles/Home.module.css';
+import { NavBar } from '../components/NavBar.js';
+import { Presentation } from '../components/Presentation.js';
+import { InfoContainer } from '../components/InfoContainer.js';
+import { Socials } from '../components/Socials.js';
 
 
 export default function Home() {

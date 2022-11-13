@@ -1,4 +1,4 @@
-import styles from '../styles/Presentation.module.css'
+import styles from '../styles/Presentation.module.css';
 
 function Presentation(props) {
     return (
@@ -22,4 +22,4 @@ function Presentation(props) {
     );
 }
 
-export { Presentation }
+export { Presentation };

@@ -1,0 +1,14 @@
+.social_item {
+    width: 100px;
+    height: 100px;
+    background-color: #665eeb;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social_box {
+    text-align: center;
+}

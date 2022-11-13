@@ -1,4 +1,4 @@
-import styles from '../styles/NavBar.module.css'
+import styles from '../styles/NavBar.module.css';
 
 function NavBar(props) {
     return (
@@ -10,4 +10,4 @@ function NavBar(props) {
     );
 }
 
-export { NavBar }
+export { NavBar };

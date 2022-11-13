@@ -1,8 +1,8 @@
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Socials.module.css';
 
 function Social() {
     return (
-        <div style={{ width: "100px", height: "100px", backgroundColor: "#665eeb", border: "1px solid black", borderRadius: "50%", display: "flex", justifyContent: "center", alignItems: "center" }}>
+        <div className={styles.social_item}>
             <img src="./µHacks new logo.png" width={"50px"} height={"50px"} />
         </div>
     );
@@ -10,7 +10,7 @@ function Social() {
 
 function Socials() {
     return (
-        <div style={{ textAlign: "center" }}>
+        <div className={styles.social_box}>
             <Social />
             <Social />
             <Social />
@@ -18,4 +18,4 @@ function Socials() {
     );
 }
 
-export { Socials }
+export { Socials };

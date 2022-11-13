@@ -1,4 +1,4 @@
-import styles from '../styles/InfoContainer.module.css'
+import styles from '../styles/InfoContainer.module.css';
 
 function InfoContainer(props) {
     return (
@@ -13,4 +13,4 @@ function InfoContainer(props) {
     );
 }
 
-export { InfoContainer }
+export { InfoContainer };
