@@ -2,8 +2,8 @@ import styles from '../styles/Presentation.module.css';
 
 function Presentation(props) {
     return (
-        <div>
-            <div className={styles.presentation__main_text_wrapper}>
+        <div style={{ marginBottom: "80vh" }}>
+            <div data-aos="fade-right" className={styles.presentation__main_text_wrapper}>
                 <div className={styles.presentation__main_text_wrapper__title_wrapper}>
                     <h1 className={styles.presentation__main_text_wrapper__title}>{props.title}</h1>
                     <h2 className={styles.presentation__main_text_wrapper__subtitle}>{props.subtitle}</h2>
@@ -13,7 +13,7 @@ function Presentation(props) {
                     <button className={styles.presentation__main_text_wrapper__button}>{props.buttonText}</button>
                 </div>
             </div>
-            <div className={styles.presentation__main_image_wrapper}>
+            <div data-aos="fade-left" className={styles.presentation__main_image_wrapper}>
                 <div className={styles.presentation__main_image_wrapper__image_wrapper}>
                     <img src={props.imgSrc} width={"500px"} height={"500px"} />
                 </div>

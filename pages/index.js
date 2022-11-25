@@ -23,9 +23,9 @@ export default function Home() {
           <NavBar buttons={[
             { text: 'About Us', link: '/#about-us' },
             { text: 'Facts', link: '/#facts' },
-            { text: 'Sponsors', link: '/somelink3' },
-            { text: 'Seasons', link: '/somelink4' },
-            { text: 'Socials', link: '/somelink5' },
+            { text: 'Sponsors', link: '/#sponsors' },
+            { text: 'Seasons', link: '/#seasons' },
+            { text: 'Socials', link: '/#socials' },
           ]} />
           <Presentation
             title={"µHacks"}
@@ -33,13 +33,13 @@ export default function Home() {
             details={"Virtual Hackathon"}
             buttonText={"2nd Season coming soon!"}
             imgSrc={"µHacks new logo.png"} />
-          <div id="#about-us" style={{ clear: "both" }}></div>
+          <div id="about-us" style={{ clear: "both" }}></div>
           <InfoContainer title={"Welcome to µHacks!"} right={true}>
             <p style={{ lineHeight: "1.25rem", margin: "10px 5%" }}>Students of all the world and all education levels are welcome to participate in this virtual hackathon.</p>
             <p style={{ lineHeight: "1.25rem", margin: "10px 5%" }}>With a team of up to 3 other friends, you will have 36 hours to create a project which helps people managing small enterprises, startups and entrepeneurs improve. Additionally, you will be able to participate in many wokshops and activities to rest while developing your world-changing idea!</p>
             <p style={{ lineHeight: "1.25rem", margin: "10px 5%" }}>We can’t wait to see your mind-blowing ideas rise! See you at µHacks!</p>
           </InfoContainer>
-          <div id="#facts" style={{ clear: "both" }}></div>
+          <div id="facts" style={{ clear: "both" }}></div>
           <InfoContainer title={"Some facts about µHacks"} right={false}>
             <div style={{ textAlign: "center", fontSize: "3rem", margin: "100px 0" }}>
               <span style={{ fontWeight: "bold" }}>130+</span> participants
@@ -51,6 +51,7 @@ export default function Home() {
               <span style={{ fontWeight: "bold" }}>$6000+</span> in in-kind sponsorships
             </div>
           </InfoContainer>
+          <div id="sponsors" style={{ clear: "both" }}></div>
           <InfoContainer title={"Sponsors"}>
             <SponsorBox /* In-kind */
               level={300}
@@ -65,9 +66,11 @@ export default function Home() {
               ]}
             />
           </InfoContainer>
+          <div id="seasons" style={{ clear: "both" }}></div>
           <InfoContainer title={"Seasons collection"} right={false}>
             <SeasonBox />
           </InfoContainer>
+          <div id="socials" style={{ clear: "both" }}></div>
           <Socials socialInfo={[
             /* Twitter */ { url: "https://mobile.twitter.com/microhackshacks", imgSrc: "social-logos/Twitter.png" },
             /* GitHub */ { url: "https://github.com/uHackers", imgSrc: "social-logos/GitHub.png" },
