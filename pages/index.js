@@ -5,6 +5,7 @@ import { Presentation } from '../components/Presentation.js';
 import { InfoContainer } from '../components/InfoContainer.js';
 import { Socials } from '../components/Socials.js';
 import { SponsorBox } from '../components/Sponsors.js';
+import { SeasonBox } from '../components/SeasonBox';
 
 export default function Home() {
   return (
@@ -42,22 +43,21 @@ export default function Home() {
           <InfoContainer title={"Some facts about µHacks"} right={false}>
           </InfoContainer>
           <InfoContainer title={"Sponsors"}>
-            <SponsorBox /* Diamond */
+            <SponsorBox /* In-kind */
               level={300}
               sponsors={[
-                { imgSrc: "./µHacks new logo.png" },
-                { imgSrc: "./µHacks new logo.png" }
-              ]}
-            />
-            <SponsorBox /* Gold */
-              level={100}
-              sponsors={[
-                { imgSrc: "./µHacks new logo.png" },
-                { imgSrc: "./µHacks new logo.png" }
+                { url: "https://artofproblemsolving.com/", imgSrc: "/sponsor-logos/AoPS.png" },
+                { url: "https://www.digitalocean.com/", imgSrc: "/sponsor-logos/DO.png" },
+                { url: "https://www.echo3d.co/", imgSrc: "/sponsor-logos/echo3D.png" },
+                { url: "https://www.interviewcake.com/", imgSrc: "/sponsor-logos/Interview Cake.png" },
+                { url: "https://linktr.ee/leadinglearners", imgSrc: "/sponsor-logos/Leading Learners.png" },
+                { url: "https://www.taskade.com/", imgSrc: "/sponsor-logos/Taskade.png" },
+                { url: "https://onepassword.com/", imgSrc: "/sponsor-logos/1Password.png" }
               ]}
             />
           </InfoContainer>
           <InfoContainer title={"Seasons collection"} right={false}>
+            <SeasonBox />
           </InfoContainer>
           <Socials />
         </div>

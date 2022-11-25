@@ -5,4 +5,5 @@
 .sponsors_box__sponsor_img {
     display: inline-block;
     margin: 10px;
+    position: relative;
 }
