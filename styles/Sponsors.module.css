@@ -1,3 +1,7 @@
+.sponsors_box {
+    text-align: center;
+}
+
 .sponsors_box__sponsor_img {
     display: inline-block;
     margin: 10px;

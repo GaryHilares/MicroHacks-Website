@@ -2,7 +2,7 @@ import styles from "../styles/Sponsors.module.css";
 
 function SponsorBox(props) {
     return (
-        <div>
+        <div className={styles.sponsors_box}>
             {props.sponsors.map((sponsor) => {
                 return (
                     <div className={styles.sponsors_box__sponsor_img}>

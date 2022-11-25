@@ -1,4 +1,9 @@
-.social_item {
+.social_item__wrapper {
+    display: inline-block;
+    margin: 25px;
+}
+
+.social_item__content {
     width: 100px;
     height: 100px;
     background-color: #665eeb;
