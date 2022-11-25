@@ -5,9 +5,9 @@ function SeasonBox(props) {
     ]
     return (
         <div>
-            {testProps.map(season => {
+            {testProps.map((season, index) => {
                 return (
-                    <div style={{ border: "2px solid black", padding: "10px", marginBottom: "10px", overflow: "hidden" }}>
+                    <div key={index} style={{ border: "2px solid black", padding: "10px", marginBottom: "10px", overflow: "hidden" }}>
                         <div style={{ width: "80%", display: "inline-block" }}>
                             <h1 style={{ fontWeight: "bold" }}>{season.name}</h1>
                             <span>{season.date}</span>

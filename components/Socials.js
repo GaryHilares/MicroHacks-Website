@@ -15,7 +15,7 @@ function Social(props) {
 function Socials(props) {
     return (
         <div className={styles.social_box}>
-            {props.socialInfo.map((social) => <Social url={social.url} imgSrc={social.imgSrc} />)}
+            {props.socialInfo.map((social, index) => <Social key={index} url={social.url} imgSrc={social.imgSrc} />)}
         </div>
     );
 }
