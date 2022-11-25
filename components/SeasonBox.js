@@ -13,7 +13,8 @@ function SeasonBox(props) {
                             <span>{season.date}</span>
                         </div>
                         <a href={season.url}>
-                            <div style={{ margin: "0", float: "right", borderRadius: "50%", width: "50px", height: "50px", backgroundColor: "black" }}>
+                            <div style={{ margin: "0", float: "right", borderRadius: "50%", width: "50px", height: "50px", backgroundColor: "white" }}>
+                                <img width={50} height={50} src={"./Devpost.png"} />
                             </div>
                         </a>
                     </div>

@@ -3,6 +3,9 @@
     border: 1px solid #eb5e9c;
     background-color: #5eebad;
     overflow: auto;
+    float: none;
+    margin: 0 5% 25px 5%;
+    width: 90%;
 }
 
 .info_container__title {

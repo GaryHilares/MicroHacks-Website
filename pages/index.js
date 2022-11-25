@@ -41,6 +41,15 @@ export default function Home() {
           </InfoContainer>
           <div id="#facts" style={{ clear: "both" }}></div>
           <InfoContainer title={"Some facts about µHacks"} right={false}>
+            <div style={{ textAlign: "center", fontSize: "3rem", margin: "100px 0" }}>
+              <span style={{ fontWeight: "bold" }}>130+</span> participants
+            </div>
+            <div style={{ textAlign: "center", fontSize: "3rem", margin: "100px 0" }}>
+              <span style={{ fontWeight: "bold" }}>15+</span> projects
+            </div>
+            <div style={{ textAlign: "center", fontSize: "3rem", margin: "100px 0 50px" }}>
+              <span style={{ fontWeight: "bold" }}>$6000+</span> in in-kind sponsorships
+            </div>
           </InfoContainer>
           <InfoContainer title={"Sponsors"}>
             <SponsorBox /* In-kind */
