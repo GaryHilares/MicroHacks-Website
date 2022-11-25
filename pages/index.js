@@ -59,7 +59,11 @@ export default function Home() {
           <InfoContainer title={"Seasons collection"} right={false}>
             <SeasonBox />
           </InfoContainer>
-          <Socials />
+          <Socials socialInfo={[
+            /* Twitter */ { url: "https://mobile.twitter.com/microhackshacks", imgSrc: "social-logos/Twitter.png" },
+            /* GitHub */ { url: "https://github.com/uHackers", imgSrc: "social-logos/GitHub.png" },
+            /* Instagram */ { url: "https://www.instagram.com/uhacks_official/", imgSrc: "social-logos/Instagram.png" },
+          ]} />
         </div>
       </main>
     </div>

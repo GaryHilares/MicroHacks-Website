@@ -1,21 +1,21 @@
 import styles from '../styles/Socials.module.css';
 
-function Social() {
+function Social(props) {
     return (
-        <div className={styles.social_item__wrapper}>
-            <div className={styles.social_item__content}>
-                <img src="./µHacks new logo.png" width={"50px"} height={"50px"} />
+        <a href={props.url}>
+            <div className={styles.social_item__wrapper}>
+                <div className={styles.social_item__content}>
+                    <img src={props.imgSrc} width={"50px"} height={"50px"} />
+                </div>
             </div>
-        </div>
+        </a>
     );
 }
 
 function Socials(props) {
     return (
         <div className={styles.social_box}>
-            <Social />
-            <Social />
-            <Social />
+            {props.socialInfo.map((social) => <Social url={social.url} imgSrc={social.imgSrc} />)}
         </div>
     );
 }
