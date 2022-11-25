@@ -10,12 +10,8 @@
   <img alt="badge-codesize" src="https://img.shields.io/github/languages/code-size/GaryNLOL/MicroHacks-Bot?style=for-the-badge">
 </p>
 
-<p align="center">
-  <img alt="logo bg-white" src="https://user-images.githubusercontent.com/46727048/131704032-dfa26b09-9696-42bf-8984-547c2b4f3257.png" width="50%" />
-</p>
-
 ## Useful links
 - [Discord Server](https://discord.gg/GaPHHqANYq)
 
 ## What is µHacks Website?
-µHacks Website is the website for µHacks (a. k. a. MicroHacks) hackathon, which will be held between January 21 and January 23.
+µHacks Website is the website for µHacks (a. k. a. MicroHacks) hackathon.
