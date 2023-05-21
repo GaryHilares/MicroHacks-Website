@@ -14,7 +14,7 @@
 MicroHacks Website is the website for µHacks (also known as "MicroHacks") and its hackathons. It includes information about the schedule, the mini-events, the prizes, among other information.
 
 ### Dependencies
-#### Development dependencies
+#### Development
 - NodeJS
 - Node Package Manager
 
